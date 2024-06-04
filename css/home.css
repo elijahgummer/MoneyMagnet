@@ -1,0 +1,413 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+body, html {
+  background-image: url("../images/house.png");
+  background-repeat: no-repeat;
+  background-size: 60%; /* Adjust to make the background image smaller */
+  background-position: top right; /* Align the background image to the top right */
+  background-position-x: 493px; /* Move the background image to the left by 20px */
+  background-position-y: 30px; /* Move the background image down by 30px */
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;  
+}
+
+/* HEADER AREA */
+
+#header .container {
+  height: auto; /* Set the container height to 100% of the viewport height */
+  display: flex;
+  align-items: center;
+}
+
+#header .typeHeader span {
+  color: #f0f424;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+#header .typeHeader {
+  font-family: "Montserrat", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  margin-left: 20px; /* Adjust the margin to move the title to the left */
+}
+
+#header .container .content-container {
+  display: flex;
+  align-items: center; /* Align items in the center vertically */
+  flex-wrap: wrap;
+  z-index: 2;
+  width: 60%;
+  margin-top: -160px; /* Adjust to control the vertical position of the content */
+  margin-left: 35px;
+}
+
+.title,
+.sentence {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 70px;
+  margin-bottom: 10px; /* Adjust spacing between title and sentence */
+}
+
+#header .sentence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* Adjust sentence font size */
+  margin: 30px 10px 0 20px; /* Adjust margin for the sentence */
+}
+
+#header .fixed-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 530px 0 0 0;
+}
+
+#header .InputContainer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-left: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+
+
+#header .input {
+  width: 300px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: rgb(255, 81, 0);
+}
+
+#header .labelforsearch {
+  cursor: text;
+  padding: 0px 12px;
+}
+
+#header .searchIcon {
+  width: 15px;
+  color: #f0f424;
+}
+
+#header .border {
+  height: 40%;
+  width: 1.3px;
+  background-color: rgb(223, 223, 223);
+}
+
+#header .micIcon {
+  width: 12px;
+}
+
+#header .micButton {
+  padding: 0px 15px 0px 12px;
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#header .searchIcon path {
+  fill: rgb(114, 114, 114);
+}
+
+#header .micIcon path {
+  fill: rgb(255, 81, 0);
+}
+
+#header .micButton:hover {
+  background-color: rgb(255, 230, 230);
+  transition-duration: 0.3s;
+}
+
+#header .getStarted {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  background-color: #F1C94B;
+  color: white;
+  padding: 8px 20px 8px 20px;
+  margin: 35px 30px 10px 10px;
+  border: none;
+  border-radius: 30px;
+  transition: background 0.5s;
+  width: 341px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#header .getStarted:hover {
+  background-color: #ffc400;
+}
+
+#header .getStarted i {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+/* FEATURES */
+
+#features .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  margin: 50px 20px;
+  padding: 60px;
+}
+
+
+#features .header {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#features img {
+  width: 108px;
+  height: 97px;
+}
+
+#features .features-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#features .feature-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin: -90px 0 0 0;
+  border-radius: 17px;
+  background-color: #ffffff;
+  padding: 25px;
+  box-shadow: 9px 9px 40px 3px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+#features .feature-header {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+#features .feature-header-smaller {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10x 0;
+}
+
+#features .content {
+  font-size: 15px;
+  font-weight: 450;
+  margin: 10px 0;
+}
+
+/* REVIEWS */
+
+#reviews .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F8F8F8;
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  margin-top: 40px 10px 10px 10px;
+}
+
+
+
+#reviews .header {
+  font-weight: 100;
+  font-size: 1.75em;
+  font-family: 'Mulish', sans-serif;
+  margin: 40px 10px 10px 10px;
+}
+
+#reviews .sub-header {
+  font-size: 2.75em;
+  font-weight: 700;
+  margin: 5px;
+}
+
+#reviews .content{
+  text-align: center;
+  color: #B1817B;
+  font-size: 16px;
+  flex-wrap: flex;
+}
+
+#reviews .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  width: 500px;
+}
+
+#reviews .card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#reviews .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 200px;
+  color: #ffffff;
+  box-shadow: 4px 2px 4px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  margin: 40px;
+}
+
+#reviews .card .profile-name {
+  font-weight: 800;
+  color: black; 
+  font-size: 16px;
+}
+
+#reviews .card .location {
+  font-weight: 500;
+  color: black; 
+  font-size: 16px;
+}
+
+#reviews .card .profile-content .fa-solid {
+  color: yellow;
+  font-size: 70px;
+  margin: 10px;
+}
+
+#reviews .card .profile-content {
+  display: flex;
+  align-items: center;
+}
+
+#reviews .card .profile-content .user-info {
+  margin: 10px;
+}
+
+#reviews .card img {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+#reviews .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* call to action area */
+
+#action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#action .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 505px;
+  background-color: #F5F5F5;
+  margin-top: 40px;
+}
+
+#action .call-to-action-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#action .header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+} 
+
+#action .header-container .header {
+  font-weight: 800;
+  font-size: 2.5em;
+  margin: 10px;
+  top: 0;
+}
+
+#action .content {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px;
+}
+
+#action .call-to-action-btn {
+  color: white;
+  background-color: #F1C94B;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 17px;
+}
+
+#action .call-to-action-btn:hover {
+  background-color: #ffc400;
+}
+
+#action .call-to-action-image {
+  border: #F5F5F5 solid 3px;
+}
+
