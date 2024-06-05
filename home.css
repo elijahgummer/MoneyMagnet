@@ -712,21 +712,6 @@ footer .info-box p {
   margin: 5px;
 }
 /* responsivness for the web page */
-@media(max-width: 800px) {
-  body {
-    background-image: url("../images/house.png");
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: top right;
-    background-position-x: 10px;
-    background-position-y: 450px;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: black;
-    overflow-x: hidden;
-  }
   /* SVG RESPONSIVNESS */
   #header .svg-container {
     display: none;
