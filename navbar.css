@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.2s;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* SIGN UP BUTTON */
+  .sign-up {
+    --primary-color: #f8d77a;  
+    --secondary-color: #fff;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    --hover-color: #333333;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    padding: 0.7em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    
+  }
+  .sign-up a {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    font-size: 13.3px;
+    margin: 0 5px;
+    color: var(--secondary-color);
+    text-decoration: none; /* Ensure the text has no underline */
+    transition: color 0.2s; /* Optional: smooth color transition */
+  }
+  .sign-up .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-up .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  .sign-up .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  .sign-up:hover {
+    background-color: var(--hover-color);
+  }
+  .sign-up:hover .arrow {
+    background: var(--secondary-color);
+  }
+  .sign-up:hover .arrow:before {
+    right: 0;
+  }
+  /* Logo */
+  .logo-container {
+    width: 20%;
+  }
+  img.logo {
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    font-size: 1.7rem;
+    width: 100%;
+    height: auto;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.1); /* Dark semi-transparent background */
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+    align-items: center;
+    z-index: 10;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #F1C94B;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adjusted gap */
+  }
+  nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.23s;
+    position: relative;
+  }
+  nav ul li {
+    display: flex;
+    align-items: center;
+  }
+  nav .menu-list {
+    display: inline-flex;
+  }
+  .menu-list li {
+    list-style: none;
+  }
+  .icon {
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  .icon:hover {
+    color: yellow;
+    transition: all 0.3s;
+  }
+  .menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 0;
+  }
+  @media (max-width: 868px) {
+    body.disabled {
+        overflow: hidden;
+      }
+    .icon {
+        display: block;
+      }
+      .icon.hide {
+        display: none;
+      }
+      nav .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        left: -100%;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0;
+        text-align: center;
+        background: #272727;
+        transition: all 0.3s ease;
+      }
+      nav.show .menu-list {
+        left: 0%;
+      }
+      nav .menu-list li {
+        margin: 10px;
+      }
+      nav .menu-list li a {
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      nav.show .menu-list li a {
+        margin-left: 0px;
+      }
+      .logo-container {
+        width: 60%;
+      }
+  }
