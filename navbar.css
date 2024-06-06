@@ -86,7 +86,7 @@
     font-size: 1.7rem;
     width: 100%;
     height: auto;
-    padding: 20px 40px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     position: fixed;
