@@ -33,21 +33,6 @@
             <!-- Registration Form -->
             <form id="registration-form">
                 <h2>Register</h2>
-                <?php
-                if (isset($_GET["error"])) {
-                    if ($_GET["error"] == "emptyinput") {
-                        echo "<div class='errorMessage'><i class='fas fa-exclamation-circle'></i> Fill in all fields!</div>";
-                    } else if ($_GET["error"] == "invalidemail") {
-                        echo "<div class='errorMessage'><i class='fas fa-exclamation-circle'></i> Please enter a valid email address.</div>";
-                    } else if ($_GET["error"] == "stmtfailed") {
-                        echo "<div class='errorMessage'><i class='fas fa-exclamation-circle'></i> Oops! Something went wrong. Please try again later.</div>";
-                    } else if ($_GET["error"] == "none") {
-                        echo "<div class='successMessage'><i class='fas fa-check-circle'></i> You have successfully signed up!</div>";
-                    } else if ($_GET["error"] == "wronglogin") {
-                        echo "<div class='errorMessage'><i class='fas fa-exclamation-circle'></i> Incorrect login information. Please try again.</div>";
-                    }
-                }
-                ?>
                 <div class="input-field">
                     <input type="text" name="name" required>
                     <label>Enter your name</label>
