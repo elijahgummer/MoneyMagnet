@@ -159,6 +159,9 @@
       .icon.hide {
         display: none;
       }
+      nav {
+        padding: 5px 20px;
+      }
       nav .menu-list {
         position: fixed;
         height: 100vh;
