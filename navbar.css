@@ -76,6 +76,9 @@
   }
   /* Logo */
   .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
     width: 20%;
   }
   img.logo {
