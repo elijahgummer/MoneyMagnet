@@ -711,6 +711,16 @@ footer .info-box p {
   font-weight: 500;
   margin: 5px;
 }
+/* responsivness for the web page */
+@media(max-width: 800px) {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+  }
   /* SVG RESPONSIVNESS */
   #header .svg-container {
     display: none;
@@ -895,6 +905,7 @@ footer .info-box p {
     width: 100%;
   }
   
+}
 @media (max-width: 994px) {
   .accordion{
     max-width: 100%;
