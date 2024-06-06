@@ -719,7 +719,6 @@ footer .info-box p {
     padding: 0;
     width: 100%;
     background-color: black;
-    overflow-x: hidden;
   }
   /* SVG RESPONSIVNESS */
   #header .svg-container {
