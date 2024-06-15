@@ -244,4 +244,5 @@ p.message {
   transition: none;
   opacity: 1;
 }
-
+@media (max-width: 820px) {
+}
