@@ -245,5 +245,7 @@ p.message {
   opacity: 1;
 }
 @media (max-width: 820px) {
-    
+    .wrapper {
+      width: 90%;
+    }
 }
