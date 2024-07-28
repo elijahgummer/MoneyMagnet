@@ -1,10 +1,10 @@
-# Locksmith Website Project 🗝️
+# Money Magnet  💵🧲
 
-![logo](https://github.com/elijahgummer/locksmith/assets/96103526/e1837724-05fa-485f-a59b-b5f08e3cf35f)
+![logo](https://github.com/user-attachments/assets/4c6e9714-7f86-4bac-8ae6-2c49a9a63dcb)
 
 ---
 
-The Locksmith Website Project is a demonstration of a fictional locksmith services website. It showcases our company's range of locksmith services through a user-friendly interface.
+The Money Magnet Website Project is a demonstration of a fictional budget and expense tracker website. It showcases our platform's range of financial management tools through a user-friendly interface.
 
 ---
 
@@ -33,7 +33,7 @@ Designed and Coded by me
 
 ---
 
-<img width="100%" alt="locksmith" src="https://github.com/elijahgummer/locksmith/assets/96103526/4dffefa4-3d6b-4e51-ad1c-51c533bafcd3">
+![MoneyMagImage](https://github.com/user-attachments/assets/88c8895b-215b-47dd-a1ae-3a8a16dafa8d)
 
 ---
 
